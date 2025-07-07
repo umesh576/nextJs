@@ -44,32 +44,30 @@
 // export default User;
 "use client";
 import { useState } from "react";
-import api from "../api/api.axios";
+import api from "../../api/api.axios";
 
 const User = () => {
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const handleSubmit = async () => {
-    const um = setTimeout(1000, async () => {
-      setLoading(true);
-      setError("");
-      try {
-        const response = await api.get("/api/user/searchAll");
-        setUserData(response.data.data[0]);
-      } catch (error) {
-        setError("Failed to fetch user data.");
-        console.error("Error fetching users:", error);
-      } finally {
-        setLoading(false);
-      }
-    });
+    setLoading(true);
+    setError("");
+    try {
+      const response = await api.get("/api/user/searchAll");
+      setUserData(response.data.data[0]);
+    } catch (error) {
+      setError("Failed to fetch user data.");
+      console.error("Error fetching users:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="p-4">
       <button
-        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded cursor-pointer"
         onClick={handleSubmit}
         disabled={loading}
       >

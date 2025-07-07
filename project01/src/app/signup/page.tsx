@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 // import api from "./api/api.axios";
-import api from "../api/api.axios";
+import api from "../../api/api.axios";
 import React from "react";
 
 export default function Home() {
@@ -20,7 +20,6 @@ export default function Home() {
       firstName,
       lastName,
       password,
-      // conformPassword,
       email,
       phoneNumber,
       jobType,
@@ -32,17 +31,6 @@ export default function Home() {
     // const res = await resizeBy.
     // res.json({ message: "Registered" });
   };
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     if (firstName) {
-  //       console.log("searching for:", firstName);
-  //     }
-  //   }, 500);
-  //   return clearTimeout(timer);
-  // }, [firstName]);
-  //   console.log(firstName);
-  // };
-  // handelSubmit();
   return (
     <div className="w-full h-screen flex justify-center items-center gap-10">
       <div>
