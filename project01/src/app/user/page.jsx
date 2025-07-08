@@ -52,7 +52,7 @@ const User = () => {
   const [error, setError] = useState("");
   const handleSubmit = async () => {
     setLoading(true);
-    setError("");
+    setError(" ");
     try {
       const response = await api.get("/api/user/searchAll");
       setUserData(response.data.data[0]);
