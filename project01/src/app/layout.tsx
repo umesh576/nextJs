@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/component/navbar/navbar";
 
 export const metadata: Metadata = {
   title: "Signup form ",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar/>
+        {children}</body>
     </html>
   );
 }
