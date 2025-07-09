@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div className='w-full py-3 px-50'>
-        <div>
+    <div className='w-full py-3 px-5  bg-blue-400'>
+        <div className='flex gap-20'>
 
-        <Link href={'/'} className='text-lg '>Home</Link>
-        <Link href={'/login'}>Login</Link>
-        <Link href={'/signup'}>signup</Link>
+        <Link href={'/'} className='text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600'>Home</Link>
+        <Link href={'/login'} className='text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600'>Login</Link>
+        <Link href={'/signup'} className='text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600'>signup</Link>
         </div>
     </div>
   )
