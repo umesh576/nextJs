@@ -9,6 +9,7 @@ const Navbar = () => {
         <Link href={'/'} className='text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600'>Home</Link>
         <Link href={'/login'} className='text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600'>Login</Link>
         <Link href={'/signup'} className='text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600'>signup</Link>
+        <Link href={'/form'} className='text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600'>form</Link>
         </div>
     </div>
   )
