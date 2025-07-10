@@ -35,6 +35,12 @@ const Navbar = () => {
         >
           Random
         </Link>
+        <Link
+          href={"/admin"}
+          className="text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600"
+        >
+          admin
+        </Link>
       </div>
     </div>
   );
