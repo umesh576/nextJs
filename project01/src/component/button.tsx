@@ -1,6 +1,6 @@
 // import React, { ReactHTMLElement } from 'react
 
-const Button = (btton:any) => {
+const Button = (btton) => {
   return (
     <div>
         <button type={btton.type}></button>
