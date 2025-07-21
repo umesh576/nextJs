@@ -30,7 +30,8 @@
     "src/app/user/page.jsx",
     "src/component/list-card.jsx",
     "src/component/userCard.jsx",
-    "src/userCard/page.jsx"
+    "src/userCard/page.jsx",
+    "src/app/khaikkhaik/page.jsx"
   ],
   "exclude": ["node_modules"]
 }

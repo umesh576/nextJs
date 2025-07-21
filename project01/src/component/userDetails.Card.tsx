@@ -17,7 +17,7 @@ const UserDetailsCard: React.FC<props> = ({ userDetails }) => {
   //   console.log(userDetails);
   const router = useRouter();
   const handleClicked = (id: string) => {
-    router.push(`/user/${id}`);
+    router.push(`/userp/${id}`);
   };
   return (
     <div className="flex w-full justify-center">

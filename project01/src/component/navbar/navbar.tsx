@@ -41,6 +41,18 @@ const Navbar = () => {
         >
           admin
         </Link>
+        <Link
+          href={"/cloudinary"}
+          className="text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600"
+        >
+          cloudinary
+        </Link>
+        <Link
+          href={"/yCloudinary"}
+          className="text-lg text-white font-extrabold hover:text-black hover:bg-blue-300 p-1  border-2 bg-blue-600"
+        >
+          yCloudinary
+        </Link>
       </div>
     </div>
   );
