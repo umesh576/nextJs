@@ -11,7 +11,7 @@ const UserDynamicPage = ({ params }: props) => {
   const response = fetch(`http://localhost:5000/api/user/get`);
   return (
     <div>
-      UserDynamicPage
+      UserDynamicPage and user page
       <h1>{params.id}</h1>
     </div>
   );
